@@ -1,0 +1,38 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Mar 26 00:16:25 2018
+
+@author: Administrator
+"""
+
+"""
+accessing set is actually to see if an element existing in set
+below we are going to use the syntax to do this
+"""
+
+#give an example set
+s = set(['Lisa', 'Bart'])
+
+'Lisa' in s
+#Out[3]: True
+
+'Bill' in s
+#Out[4]: False
+
+# use the lower case to see whether set is sensitive 
+'lisa' in s 
+#Out[5]: False
+#From above, we can see that set is sensitive to cases
+
+
+"""
+Misson: improve the set, make it support lower case. 
+"""
+
+#to make set support lower case, we can add the lower cases of the elements
+s = set(['Lisa', 'Bart', 'lisa', 'bart'])
+
+#now let`s test
+'lisa' in s
+'bart' in s
+
